@@ -1524,8 +1524,8 @@ kimik3-fp4-b300-vllm-agentic-dspark:
   #
   # Kimi-K3 runtime from vllm-project/vllm @ 3696c772aae308f2420a8f307b0971e6986c4818.
   # This replaces the unavailable 5894fdf build; new results use a new runtime baseline.
-  image: vllm/vllm-openai:nightly-dev-x86_64-cu13-3696c77
-  #image: /GPU/sqsh/nightly-dev-x86_64-cu13-3696c77
+  #image: vllm/vllm-openai:nightly-dev-x86_64-cu13-3696c77
+  image: /GPU/sqsh/nightly-dev-x86_64-cu13-3696c77
   model: moonshotai/Kimi-K3
   model-prefix: kimik3
   runner: cluster:b300-dsxe
