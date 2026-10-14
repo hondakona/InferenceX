@@ -76,6 +76,7 @@ base:
         disable-uvicorn-access-log: true
         kv-transfer-config: '{"kv_connector":"MooncakeStoreConnector","kv_role":"kv_both","kv_load_failure_policy":"recompute","kv_connector_extra_config":{"load_async":true,"lookup_async":true,"enable_offload":false}}'
       env:
+        ENROOT_ROOTFS_WRITABLE: '1'
         VLLM_ALLREDUCE_USE_FLASHINFER: '1'
         VLLM_ENABLE_K3_LATENT_MOE_TAIL_FUSION: '1'
         VLLM_USE_V2_MODEL_RUNNER: '1'
