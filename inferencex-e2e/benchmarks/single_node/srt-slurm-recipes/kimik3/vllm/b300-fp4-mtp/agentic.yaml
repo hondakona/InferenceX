@@ -100,6 +100,8 @@ base:
         MC_WORKERS_PER_CTX: '4'
         WITH_NVIDIA_PEERMEM: '0'
         VLLM_MOONCAKE_LOAD_RECV_THREADS: '4'
+  srun_options:
+    export: 'ALL,ENROOT_ROOTFS_WRITABLE=1'
   benchmark:
     type: custom
     command: bash /infmax-workspace/benchmarks/srt_agentic.sh
