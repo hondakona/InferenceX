@@ -6,8 +6,8 @@ base:
   name: kimik3-fp4-b300-vllm-agentic
   model:
     path: hf:moonshotai/Kimi-K3
-    container: vllm/vllm-openai:nightly-dev-x86_64-cu13-3696c77
-    #container: /GPU/sqsh/nightly-dev-x86_64-cu13-3696c77
+    #container: vllm/vllm-openai:nightly-dev-x86_64-cu13-3696c77
+    container: /GPU/sqsh/nightly-dev-x86_64-cu13-3696c77
     precision: fp4
   resources:
     gpu_type: b300
