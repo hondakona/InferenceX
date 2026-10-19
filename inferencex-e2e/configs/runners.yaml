@@ -821,7 +821,7 @@ clusters:
         host-setup:
           script: runners/srt-slurm/hooks/mi355x-amds/setup.sh
           env:
-            IBDEVICES: rdma0,rdma1,rdma2,rdma3,rdma4,rdma5,rdma6,rdma7
+            #IBDEVICES: rdma0,rdma1,rdma2,rdma3,rdma4,rdma5,rdma6,rdma7
           timeout-s: 1200
           nodes: all
         volume-mounts:
