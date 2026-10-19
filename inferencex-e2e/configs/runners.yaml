@@ -820,7 +820,7 @@ clusters:
         outputs: /it-share/gharunners2/srt-slurm/outputs
         host-setup:
           script: runners/srt-slurm/hooks/mi355x-amds/setup.sh
-          env:
+          #env:
             #IBDEVICES: rdma0,rdma1,rdma2,rdma3,rdma4,rdma5,rdma6,rdma7
           timeout-s: 1200
           nodes: all
