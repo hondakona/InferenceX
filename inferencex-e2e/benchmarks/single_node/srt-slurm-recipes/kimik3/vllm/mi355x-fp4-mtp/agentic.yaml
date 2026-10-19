@@ -71,6 +71,8 @@ base:
         VLLM_USE_DIRECT_DCP_KV_GATHER: '0'
         # Route DCP multi-token verify through the AITER ASM round-robin decode.
         VLLM_ROCM_AITER_MLA_DCP_VERIFY: asm
+  srun_options:
+          export: 'ALL,ENROOT_ROOTFS_WRITABLE=1'
   benchmark:
     type: custom
     command: bash /infmax-workspace/benchmarks/srt_agentic.sh
