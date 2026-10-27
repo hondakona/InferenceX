@@ -108,6 +108,7 @@ labels:
     - gb200-nv_17
   b300:
     - b300-dsxe_01
+    - b300-dsxe_02
   gb300:
     - gb300-nv_00
     - gb300-nv_01
@@ -225,6 +226,7 @@ labels:
     - gb200-nv_17
   cluster:b300-dsxe:
     - b300-dsxe_01
+    - b300-dsxe_02
   cluster:gb300-nv:
     - gb300-nv_00
     - gb300-nv_01
