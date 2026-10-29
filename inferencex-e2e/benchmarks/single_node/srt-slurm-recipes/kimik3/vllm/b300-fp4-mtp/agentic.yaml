@@ -42,7 +42,7 @@ base:
         store_config:
           mode: embedded
           metadata_server: P2PHANDSHAKE
-          global_segment_size: 128GB
+          global_segment_size: 256GB
           local_buffer_size: 4GB
           protocol: rdma
           device_name: ""
