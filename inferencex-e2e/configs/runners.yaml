@@ -788,7 +788,7 @@ clusters:
             export TRITON_CACHE_DIR="/tmp/triton-cache-$SLURM_JOB_ID"
   mi355x-amds:
     gpus-per-node: 8
-    available-cpu-dram-mib: 3_095_781
+    available-cpu-dram-mib: 2_321_817
     arch: x86_64
     env:
       MORI_RDMA_TC: "104"
@@ -802,7 +802,7 @@ clusters:
       partition: compute
       exclusive: true
       gres: "gpu:{gpus}"
-      cpus-per-task: 128
+      cpus-per-task: 256
       srun-args: [--container-remap-root, --container-writable]
       volumes:
         hf-hub-cache: {path: /root/.cache/huggingface/hub, visibility: node-local}
