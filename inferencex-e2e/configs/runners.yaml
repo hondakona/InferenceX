@@ -788,7 +788,7 @@ clusters:
             export TRITON_CACHE_DIR="/tmp/triton-cache-$SLURM_JOB_ID"
   mi355x-amds:
     gpus-per-node: 8
-    available-cpu-dram-mib: 2_321_817
+    available-cpu-dram-mib: 3_095_781
     arch: x86_64
     env:
       MORI_RDMA_TC: "104"
